@@ -11,7 +11,7 @@ services:
       - ./jellyfin/config:/config
       - ${MEDIA}/series:/series
       - ${MEDIA}/pelis:/pelis
-      - ${MEDIA}/cocumentales:/documentales
+      - ${MEDIA}/documentales:/documentales
     ports:
       - 8096:8096
     restart: unless-stopped
@@ -131,4 +131,5 @@ services:
 
 volumes:
   jellyfin-config:
+
 
